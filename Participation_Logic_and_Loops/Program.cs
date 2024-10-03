@@ -27,6 +27,30 @@
             playerName = Console.ReadLine();
             Console.WriteLine("\nYou chose: " + userChoice + "\n");
 
+            while(userChoice != "left" && userChoice != "right" && userChoice != "up")
+            {
+                Console.WriteLine("Please enter either 'left', 'right', or our SUPER DUPER secret answer of 'down'.");
+                userChoice = Console.ReadLine();
+                Console.WriteLine("\nYou chose: " + userChoice + "\n");
+            }
+
+            if (userChoice == "left")
+            {
+                Console.WriteLine("You take the path to the left. It leads you out to the jungle. You are safe to adventure.");
+            }
+            else if (userChoice == "right")
+            {
+                Console.WriteLine("You take the path to the right. It leads you into a cave. There is a cave in and you are LOST");
+            }
+            else if (userChoice == "down")
+            {
+                Console.WriteLine("'down' seriously?!? 'down' I mean you can go down but you'll be here for a long time. GET TO DIGINGING ");
+            }
+            else
+            {
+                Console.WriteLine("I honestly don't know how you got here. Congrats.");
+            }
+
 
 
 
