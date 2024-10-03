@@ -22,12 +22,12 @@
                 "And a cave entrance to the right.\n");
 
             Console.WriteLine("Which path do you chose?");
-            Console.WriteLine("Type left 'left'  to choose the path and go left or type 'right' to choose the cave and go right.");
+            Console.WriteLine("Type 'left'  to choose the path and go left or type 'right' to choose the cave and go right.");
 
-            playerName = Console.ReadLine();
+            userChoice = Console.ReadLine();
             Console.WriteLine("\nYou chose: " + userChoice + "\n");
 
-            while(userChoice != "left" && userChoice != "right" && userChoice != "up")
+            while(userChoice != "left" && userChoice != "right" && userChoice != "down")
             {
                 Console.WriteLine("Please enter either 'left', 'right', or our SUPER DUPER secret answer of 'down'.");
                 userChoice = Console.ReadLine();
@@ -44,7 +44,7 @@
             }
             else if (userChoice == "down")
             {
-                Console.WriteLine("'down' seriously?!? 'down' I mean you can go down but you'll be here for a long time. GET TO DIGINGING ");
+                Console.WriteLine("'down' seriously?!? 'down' I mean you can go down but you'll be here for a long time. GET TO DIGGING");
             }
             else
             {
